@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <!-- Recipe Name Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recipeCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/recipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Meal Type Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mealTypeCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeCard">
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Difficulty Level Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/difficultyLevelCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealTypeCard">
+
+        <TextView
+            android:id="@+id/textViewDifficultyLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Ingredients Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ingredientsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyLevelCard">
+
+        <TextView
+            android:id="@+id/textViewIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Steps Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stepsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientsCard">
+
+        <TextView
+            android:id="@+id/textViewSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Servings Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/servingsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepsCard">
+
+        <TextView
+            android:id="@+id/textViewServings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

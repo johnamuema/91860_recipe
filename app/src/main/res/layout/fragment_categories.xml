@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/breakfast_card"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:radius="20dp"
+    app:cardBackgroundColor="#FFA07A"
+    app:cardElevation="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Breakfast"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+    android:textStyle="bold"/>
+</com.google.android.material.card.MaterialCardView>
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/lunch_card"
+android:layout_width="match_parent"
+android:layout_height="100dp"
+android:layout_marginBottom="16dp"
+android:radius="12dp"
+app:cardBackgroundColor="#66CDAA"
+app:cardElevation="8dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:text="Lunch"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textStyle="bold"/>
+</com.google.android.material.card.MaterialCardView>
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/supper_card"
+android:layout_width="match_parent"
+android:layout_height="100dp"
+android:layout_marginBottom="16dp"
+android:radius="12dp"
+app:cardBackgroundColor="#9370DB"
+app:cardElevation="8dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:text="Supper"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textStyle="bold"/>
+</com.google.android.material.card.MaterialCardView>
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/snack_card"
+android:layout_width="match_parent"
+android:layout_height="100dp"
+android:radius="12dp"
+app:cardBackgroundColor="#FFD700"
+app:cardElevation="8dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:text="Snacks"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textStyle="bold"/>
+</com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
